@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef's Hotel</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1501117716987-c8e1ecb2107b') no-repeat center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 { font-size: 3rem; }
+    header p { margin: 10px 0; font-size: 1.2rem; }
+
+    .btn {
+      padding: 10px 20px;
+      background: #ff7f50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(0,0,0,0.7);
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li { margin: 0 15px; }
+
+    nav a { color: white; text-decoration: none; }
+
+    section { padding: 50px 20px; text-align: center; }
+
+    .rooms, .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>Chef's Hotel</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <h1>Welcome to Chef's Hotel</h1>
+  <p>Luxury Stay with Delicious Experiences</p>
+  <a href="#rooms" class="btn">Explore Rooms</a>
+</header>
+
+<section id="rooms">
+  <h2>Our Rooms</h2>
+  <div class="rooms">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568495248636-6432b97bd949" alt="Room">
+      <h3>Deluxe Room</h3>
+      <p>Comfortable and luxurious stay.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="Room">
+      <h3>Suite Room</h3>
+      <p>Spacious rooms with premium facilities.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Restaurant</h3>
+      <p>World-class cuisine by top chefs.</p>
+    </div>
+    <div class="card">
+      <h3>Spa</h3>
+      <p>Relax and rejuvenate your body.</p>
+    </div>
+    <div class="card">
+      <h3>Free Wi-Fi</h3>
+      <p>Stay connected anytime.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: contact@chefshotel.com</p>
+  <p>Phone: +91 98765 43210</p>
+</section>
+
+<footer>
+  <p>© 2026 Chef's Hotel. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
